@@ -63,17 +63,42 @@ graph LR
   T5 --> T7
 ```
 
-Each node above is **one file** under `/topics/` — not a folder. Sub-points live as sections inside that file. One hop from root to any topic.
+The 7 domains above are a *conceptual* grouping — not a folder you'll find on disk. On disk, everything lives one level under `/topics/`, consistently: either a single file (a topic with no close neighbor), or a small cluster folder (2+ related topics) with its own `README.md` as the index. Never deeper than that.
 
-| File | Covers |
-|---|---|
-| [`topics/fundamentals-instrumentation.md`](topics/fundamentals-instrumentation.md) | Data sources, tracking plan, naming, QA, semantic layer, identity resolution, legal/consent |
-| [`topics/governance-operating-model.md`](topics/governance-operating-model.md) | Operating model, team growth, prioritization, stack decisions, legacy deprecation, role definition |
-| [`topics/reporting-measurement.md`](topics/reporting-measurement.md) | KPI tree, reporting granularity, activation/retention/monetization, experimentation |
-| [`topics/ai-native-measurement.md`](topics/ai-native-measurement.md) | Measuring AI activity, conversational analytics, agents, outcome/trust metrics |
-| [`topics/knowledge-hub-second-brain.md`](topics/knowledge-hub-second-brain.md) | This repo's own design: scope, governance, why GitHub |
-| [`topics/enablement-training.md`](topics/enablement-training.md) | Training, self-serve enablement, skill codification, team growth |
-| [`topics/open-tensions.md`](topics/open-tensions.md) | Unresolved questions worth naming rather than hiding |
+| Cluster / file (under `topics/`) | Domain | Covers |
+|---|---|---|
+| `instrumentation-standards/` | Fundamentals | Data sources, tracking plan, naming convention |
+| `tracking-ownership-and-qa/` | Fundamentals | Strategy & ownership, QA & unit testing |
+| `data-integrity-and-semantics/` | Fundamentals | Data accuracy, semantic layer |
+| `identity-and-users/` | Fundamentals | Identity resolution, two-sided users |
+| `compliance-and-platform-constraints/` | Fundamentals | Legal/consent, cross-platform, latency/FE-BE/access |
+| `action-tracking-vs-ai-tracking.md` | Fundamentals | Why AI interactions need their own tracking pattern |
+| `operating-model-and-sequencing/` | Governance | Operating model, sequencing of work |
+| `team-and-role-design/` | Governance | Growing the team/embedding, redefining the analyst role |
+| `planning-and-prioritization/` | Governance | Backlog/tracking-plan interactions, prioritization techniques |
+| `stack-and-legacy-decisions/` | Governance | Deciding on the stack, legacy tracking & deprecation |
+| `documentation-standards/` | Governance | Documentation expectations, no silos |
+| `how-to-avoid-being-a-helpdesk.md` | Governance | The default failure mode of an under-leveraged function |
+| `audit-method.md` | Governance | Pointer to the full audit method in this README |
+| `kpi-and-reporting/` | Reporting | KPI tree, key reports |
+| `measurement-definitions/` | Reporting | Granularity, how measures are calculated, model backbone |
+| `activation-to-monetization-funnel/` | Reporting | Activation window, conversion, retention, monetization |
+| `product-catalog/` | Reporting | Features, models |
+| `experimentation-and-performance-measurement.md` | Reporting | Clean vs. non-clean experimentation |
+| `ai-event-data/` | AI-Native | Measuring AI activity, conversation → event data |
+| `ai-automation-surfaces/` | AI-Native | Automations, experimentation platform, morning briefings |
+| `omni-and-agent-layer/` | AI-Native | Agents, Omni models, Omni API to Claude |
+| `conversational-ux/` | AI-Native | Conversational analytics, new UX vs. prompt-based agents |
+| `comparing-ai-and-legacy-features.md` | AI-Native | Outcome-based comparison, not activity-based |
+| `trust-and-calibration-metrics.md` | AI-Native | Acceptance rate, override rate, survivorship bias, quality substitution |
+| `second-brain-foundations/` | Knowledge Hub | What/why/how, long-term vs. short-term memory |
+| `repository-design/` | Knowledge Hub | Insights-not-just-data, centralization, Markdown-in-GitHub |
+| `why-github-not-drive.md` | Knowledge Hub | The full rationale, including the honest trade-off |
+| `governance-and-trust/` | Knowledge Hub | Scope (finished findings only), review process, freshness |
+| `training-and-access/` | Enablement | Training, user access |
+| `self-serve-and-growth/` | Enablement | Self-serve enablement, team learning & development |
+| `skill-codification.md` | Enablement | Encoding analyst judgment into something reusable |
+| `open-tensions/` | Open Tensions | Product Ops boundary, governance vs. speed, org design |
 
 ---
 
