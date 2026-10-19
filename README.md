@@ -110,3 +110,25 @@ The 7 domains above are a *conceptual* grouping — not a folder you'll find on 
 4. Every entry carries author, reviewer, and date. If the underlying metric or event changes later, the entry gets a re-review, not a quiet edit.
 
 Raw signal, hunches, and work-in-progress don't belong here — keep those in your own working notes until they're ready to be a finding someone else can build on.
+
+<!-- Paste this as a section into the existing README.md — it is not a standalone repo file. -->
+
+## How to consume this hub
+
+This repo is the source of truth for our finished product-analytics findings. To
+put its knowledge into your workflow:
+
+1. **Sync it into your assistant's context** — clone it into your agent's
+   workspace (Claude Code / Cowork read `CLAUDE.md` → `AGENTS.md` automatically),
+   or add the repo as a knowledge source in a claude.ai Project.
+2. **If your tool doesn't auto-read repo files** (e.g. a claude.ai Project), add
+   one line to that Project's custom instructions:
+   *"Follow the consumption rule in this repo's `AGENTS.md`."* Keep it a pointer —
+   don't copy the rule in, so there stays one canonical version.
+3. **Then just ask.** For our metrics, definitions, and findings the assistant
+   answers from the hub and cites the file; for general method it answers
+   normally; if something isn't covered it says so rather than inventing it.
+
+**Rule of thumb:** ground against the hub when the answer must be *our* truth
+(specific, consistent, current, auditable); ask plainly when you want general
+knowledge or open exploration.
