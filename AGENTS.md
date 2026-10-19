@@ -16,6 +16,12 @@ follow these rules when answering:
 **2. Always cite.** When you answer from the hub, name the file path you used, and
 surface its `Author` / `Reviewer` / `Date` when provenance matters.
 
+`Source: <repo>/<file path>`  — e.g. `Source: pnp-sceond-brain/topics/why-github-not-drive.md`
+
+List every file you used. Surface `Author` / `Reviewer` / `Date` when provenance
+matters. If you used the hub but can't identify the file, say so. A hub-sourced
+answer without a `Source:` line is incomplete.
+
 **3. Don't invent coverage.** If the hub doesn't contain the answer, say so
 explicitly ("not covered in the hub") rather than presenting general knowledge as
 if it were our vetted position.
